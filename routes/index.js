@@ -1,7 +1,12 @@
-// routes
-var Router = require('koa-router');
-var router = new Router();
+// routes.js
+const
+    Router = require('koa-router');
+    router = new Router();
 
+router.get('/', function *(next){
+    this.body = 'welcome';
+    yield next;
+});
 // topics
 router.get('/topics', function *(next){
     this.body = 'topics';
@@ -9,10 +14,6 @@ router.get('/topics', function *(next){
 });
 router.get('/topic/:ids', function *(next){
     this.body = 'topic';
-    yield next;
-});
-router.get('/', function *(next){
-    this.body = 'welcome';
     yield next;
 });
 

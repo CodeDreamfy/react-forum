@@ -1,13 +1,13 @@
+"use strict";
 // app.js
-var koa = require('koa');
-var routes = require('./routes');
-var app = koa(),
-    server;
+const 
+    app = require('koa')(),
+    routes = require('./routes');
 
 // load routes
 app.use(routes.middleware());
 
 // start server
-server = app.listen(3000, function() {
+app.listen(3000, function() {
     console.log('Koa is listening to http://localhost:3000');
 });
