@@ -1,0 +1,29 @@
+{
+  "name": "react-forum",
+  "version": "1.0.0",
+  "description": "Forum built for reactjs.cn which used koa and react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactjs-cn/react-forum.git"
+  },
+  "keywords": [
+    "react",
+    "koa",
+    "reactjs.cn"
+  ],
+  "author": "Jsgeeker(jsgeeker@gmail.com)",
+  "bugs": {
+    "url": "https://github.com/reactjs-cn/react-forum/issues"
+  },
+  "homepage": "https://github.com/reactjs-cn/react-forum",
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "dependencies": {
+    "koa": "~0.4.5"
+  }
+}
