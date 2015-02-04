@@ -5,6 +5,7 @@ var clean   = require('gulp-clean');
 var copy    = require('gulp-copy');
 var less    = require('gulp-less');
 var watch   = require('gulp-watch');
+var react   = require('gulp-react');
 
 var path    = require('path');
 
@@ -28,11 +29,12 @@ gulp.task('less', function () {
     .pipe(gulp.dest('static/dist/css'));
 });
 
-gulp.task('watch', function () {
-    return watch('static/src/*')
-        .pipe(gulp.dest('static/dist/'));
+gulp.task('react', function () {
+    return gulp.src('static/src/**/*.jsx')
+        .pipe(react())
+        .pipe(gulp.dest('static/dist'));
 });
 
-gulp.task('default', ['clean', 'copy', 'less']);
+gulp.task('default', ['clean', 'less', 'react']);
 gulp.task('dev', ['default', 'watch']);
 gulp.task('build', ['default']);

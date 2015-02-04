@@ -4,8 +4,8 @@ var Router  =   require('koa-router');
 
 var web = new Router();
 
-web.get('/', function * () {
-  this.body = 'welcome';
+web.get('/', function * (next) {
+   yield this.render('pc/index', {'title': 'Reactjs Koa Bootstrap'}, true);
 });
 
 module.exports = web;

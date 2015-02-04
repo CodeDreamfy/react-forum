@@ -1,0 +1,28 @@
+{
+  "name": "react-forum",
+  "version": "1.0.0",
+  "homepage": "https://github.com/reactjs-cn/react-forum",
+  "authors": [
+    "Jsgeeker <jsgeeker@gmail.com>"
+  ],
+  "description": "Forum built for reactjs.cn which used koa and react.",
+  "keywords": [
+    "react",
+    "koa",
+    "reactjs.cn"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "react-bootstrap": "~0.13.3",
+    "bootstrap": "~3.3.2",
+    "requirejs": "~2.1.15"
+  }
+}

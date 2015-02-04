@@ -10,7 +10,7 @@ var config = {
   server: {
     port: 3000
   },
-  staticPath: 'static',
+  staticPath: '/static',
   mongoUrl: 'mongodb://localhost/' + appName,
   redis: {
     host: 'localhost',
