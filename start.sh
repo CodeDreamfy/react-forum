@@ -9,6 +9,5 @@ export NODE_ENV=dev
 export PATH=$NODE_PATH:$PATH
 
 #Exc
-gulp default
 open http://localhost:3000
 node --harmony $NODE_SCRIPT

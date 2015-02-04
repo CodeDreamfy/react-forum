@@ -25,11 +25,12 @@
     "gulp": "^3.8.10",
     "gulp-clean": "^0.3.1",
     "gulp-copy": "0.0.2",
-    "gulp-react": "^2.0.0"
+    "gulp-react": "^2.0.0",
+    "gulp-less": "^2.0.1",
+    "gulp-watch": "^4.1.0"
   },
   "dependencies": {
-    "gulp-less": "^2.0.1",
-    "gulp-watch": "^4.1.0",
+    "gulp-sequence": "^0.3.1",
     "koa": "~0.16.0",
     "koa-body": "^0.4.0",
     "koa-etag": "^2.0.0",
